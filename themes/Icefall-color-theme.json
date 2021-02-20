@@ -4,13 +4,17 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#1B1C24",
-		"editor.foreground": "#D8DDF2",
-		"foreground": "#D8DDF2"
+		"editor.foreground": "#C4C9DF",
+		"foreground": "#C4C9DF"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#999DAE",
+			"foreground": "#959DBE",
+			"fontStyle": ""
+		},
+		"comment": {
+			"foreground": "#E2E7FD",
 			"fontStyle": ""
 		}
 	},

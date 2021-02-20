@@ -4,14 +4,24 @@ use tincture::{Hue, Oklch};
 pub(crate) struct Palette;
 
 impl Palette {
+    const BASE_HUE: f32 = 275.0;
+
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
         let scale_point = scale.value();
 
         oklch(
-            lerp(scale_point, 0.23..0.9),
-            lerp(scale_point, 0.015..0.03),
-            275.0,
+            lerp(scale_point, 0.23..0.7),
+            lerp(scale_point, 0.015..0.05),
+            Self::BASE_HUE,
         )
+    }
+
+    pub(crate) fn fg(&self) -> Oklch {
+        oklch(0.84, 0.03, Self::BASE_HUE)
+    }
+
+    pub(crate) fn bright_fg(&self) -> Oklch {
+        oklch(0.93, 0.03, Self::BASE_HUE)
     }
 }
 
@@ -19,15 +29,13 @@ impl Palette {
 pub(crate) enum BaseScale {
     Bg,
     FadedFg,
-    Fg,
 }
 
 impl BaseScale {
     fn value(self) -> f32 {
         match self {
             Self::Bg => 0.0,
-            Self::FadedFg => 0.7,
-            Self::Fg => 1.0,
+            Self::FadedFg => 1.0,
         }
     }
 }
