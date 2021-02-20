@@ -1,0 +1,18 @@
+// Do not edit directly; this file is generated.
+{
+	"name": "Icefall",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#1B1C24",
+		"editor.foreground": "#D8DDF2",
+		"foreground": "#D8DDF2"
+	},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"keyword": {
+			"foreground": "#999DAE",
+			"fontStyle": ""
+		}
+	},
+	"tokenColors": []
+}
