@@ -24,6 +24,14 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_workspace_rule("sideBar.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule(
+        "sideBarSectionHeader.background",
+        palette.base(BaseScale::DarkBg),
+    );
+    builder.add_workspace_rule(
+        "sideBarSectionHeader.foreground",
+        palette.base(BaseScale::BrightFg),
+    );
 
     builder.add_workspace_rule("activityBar.background", palette.base(BaseScale::Bg));
     builder.add_workspace_rule("activityBar.foreground", palette.base(BaseScale::BrightFg));

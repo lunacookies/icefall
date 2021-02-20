@@ -10,6 +10,8 @@
 		"editorGutter.background": "#232639",
 		"editor.lineHighlightBackground": "#232639",
 		"sideBar.background": "#14151F",
+		"sideBarSectionHeader.background": "#14151F",
+		"sideBarSectionHeader.foreground": "#EEF1FF",
 		"activityBar.background": "#1C1E28",
 		"activityBar.foreground": "#EEF1FF",
 		"activityBar.inactiveForeground": "#494D68",
