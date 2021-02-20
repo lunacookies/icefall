@@ -10,6 +10,10 @@ impl Palette {
         oklch(scale.lightness(), scale.chroma(), Self::BASE_HUE)
     }
 
+    pub(crate) fn cyan(&self) -> Oklch {
+        oklch(0.75, 0.05, 215.0)
+    }
+
     pub(crate) fn purple(&self) -> Oklch {
         oklch(0.75, 0.1, 290.0)
     }

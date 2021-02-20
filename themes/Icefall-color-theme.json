@@ -35,6 +35,10 @@
 			"foreground": "#EEF1FF",
 			"fontStyle": ""
 		},
+		"string": {
+			"foreground": "#8AB7C2",
+			"fontStyle": ""
+		},
 		"number": {
 			"foreground": "#ADA3E9",
 			"fontStyle": ""
