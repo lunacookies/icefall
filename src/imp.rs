@@ -101,4 +101,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         ],
         palette.purple(),
     );
+
+    builder.add_rule(Semantic("lifetime"), palette.green());
 }
