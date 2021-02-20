@@ -21,7 +21,9 @@
 		"statusBar.background": "#14151F",
 		"statusBar.foreground": "#6D7397",
 		"editor.selectionBackground": "#3D415A",
-		"selection.background": "#3D415A"
+		"selection.background": "#3D415A",
+		"editorCodeLens.foreground": "#6D7397",
+		"rust_analyzer.inlayHints.foreground": "#6D7397"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {

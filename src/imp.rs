@@ -49,6 +49,15 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::LightBg),
     );
     builder.add_workspace_rule("selection.background", palette.base(BaseScale::LightBg));
+
+    builder.add_workspace_rule(
+        "editorCodeLens.foreground",
+        palette.base(BaseScale::DimmedFg),
+    );
+    builder.add_workspace_rule(
+        "rust_analyzer.inlayHints.foreground",
+        palette.base(BaseScale::DimmedFg),
+    );
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
