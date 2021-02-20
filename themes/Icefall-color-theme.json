@@ -8,6 +8,7 @@
 		"foreground": "#CBCFE4",
 		"editorLineNumber.foreground": "#464B65",
 		"editorGutter.background": "#232638",
+		"editor.lineHighlightBackground": "#232638",
 		"statusBar.background": "#14151F",
 		"statusBar.foreground": "#6D7397"
 	},
