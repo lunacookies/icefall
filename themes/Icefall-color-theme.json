@@ -18,7 +18,9 @@
 		"tab.activeBackground": "#232638",
 		"tab.activeForeground": "#E2E7FC",
 		"statusBar.background": "#14151F",
-		"statusBar.foreground": "#6D7397"
+		"statusBar.foreground": "#6D7397",
+		"editor.selectionBackground": "#3D415A",
+		"selection.background": "#3D415A"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {

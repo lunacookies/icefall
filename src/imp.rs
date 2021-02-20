@@ -16,14 +16,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         "editorLineNumber.foreground",
         palette.base(BaseScale::BarelyVisibleFg),
     );
-    builder.add_workspace_rule(
-        "editorGutter.background",
-        palette.base(BaseScale::LightenedBg),
-    );
+    builder.add_workspace_rule("editorGutter.background", palette.base(BaseScale::MiddleBg));
 
     builder.add_workspace_rule(
         "editor.lineHighlightBackground",
-        palette.base(BaseScale::LightenedBg),
+        palette.base(BaseScale::MiddleBg),
     );
 
     builder.add_workspace_rule("activityBar.background", palette.base(BaseScale::Bg));
@@ -39,11 +36,17 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_workspace_rule("tab.inactiveBackground", palette.base(BaseScale::Bg));
     builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DimmedFg));
-    builder.add_workspace_rule("tab.activeBackground", palette.base(BaseScale::LightenedBg));
+    builder.add_workspace_rule("tab.activeBackground", palette.base(BaseScale::MiddleBg));
     builder.add_workspace_rule("tab.activeForeground", palette.base(BaseScale::BrightFg));
 
     builder.add_workspace_rule("statusBar.background", palette.base(BaseScale::DarkBg));
     builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DimmedFg));
+
+    builder.add_workspace_rule(
+        "editor.selectionBackground",
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule("selection.background", palette.base(BaseScale::LightBg));
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
