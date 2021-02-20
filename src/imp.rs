@@ -26,6 +26,22 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::LightenedBg),
     );
 
+    builder.add_workspace_rule("activityBar.background", palette.base(BaseScale::Bg));
+    builder.add_workspace_rule("activityBar.foreground", palette.base(BaseScale::BrightFg));
+    builder.add_workspace_rule(
+        "activityBar.inactiveForeground",
+        palette.base(BaseScale::BarelyVisibleFg),
+    );
+
+    builder.add_workspace_rule(
+        "editorGroupHeader.tabsBackground",
+        palette.base(BaseScale::Bg),
+    );
+    builder.add_workspace_rule("tab.inactiveBackground", palette.base(BaseScale::Bg));
+    builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DimmedFg));
+    builder.add_workspace_rule("tab.activeBackground", palette.base(BaseScale::LightenedBg));
+    builder.add_workspace_rule("tab.activeForeground", palette.base(BaseScale::BrightFg));
+
     builder.add_workspace_rule("statusBar.background", palette.base(BaseScale::DarkBg));
     builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DimmedFg));
 }
