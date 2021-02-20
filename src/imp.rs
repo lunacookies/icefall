@@ -64,4 +64,15 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("keyword"), palette.base(BaseScale::FadedFg));
 
     builder.add_rule(Semantic("comment"), palette.base(BaseScale::BrightFg));
+
+    builder.add_rules(
+        &[
+            Semantic("number"),
+            Semantic("boolean"),
+            Semantic("formatSpecifier"),
+            Semantic("enumMember"),
+            Semantic("*.constant"),
+        ],
+        palette.purple(),
+    );
 }

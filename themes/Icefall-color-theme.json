@@ -34,6 +34,26 @@
 		"comment": {
 			"foreground": "#EEF1FF",
 			"fontStyle": ""
+		},
+		"number": {
+			"foreground": "#ADA3E9",
+			"fontStyle": ""
+		},
+		"boolean": {
+			"foreground": "#ADA3E9",
+			"fontStyle": ""
+		},
+		"formatSpecifier": {
+			"foreground": "#ADA3E9",
+			"fontStyle": ""
+		},
+		"enumMember": {
+			"foreground": "#ADA3E9",
+			"fontStyle": ""
+		},
+		"*.constant": {
+			"foreground": "#ADA3E9",
+			"fontStyle": ""
 		}
 	},
 	"tokenColors": []
