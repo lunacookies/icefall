@@ -4,7 +4,7 @@ use tincture::{Hue, Oklch};
 pub(crate) struct Palette;
 
 impl Palette {
-    const BASE_HUE: f32 = 275.0;
+    const BASE_HUE: f32 = 277.0;
 
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
         oklch(scale.lightness(), scale.chroma(), Self::BASE_HUE)

@@ -4,19 +4,19 @@
 	"type": "dark",
 	"colors": {
 		"editor.background": "#1A1C26",
-		"editor.foreground": "#CBD0E5",
-		"foreground": "#CBD0E5",
-		"editorLineNumber.foreground": "#4B516C",
-		"editorGutter.background": "#202435"
+		"editor.foreground": "#CCD0E5",
+		"foreground": "#CCD0E5",
+		"editorLineNumber.foreground": "#4C506C",
+		"editorGutter.background": "#212435"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#98A2CE",
+			"foreground": "#9AA1CE",
 			"fontStyle": ""
 		},
 		"comment": {
-			"foreground": "#E2E7FD",
+			"foreground": "#E2E7FC",
 			"fontStyle": ""
 		}
 	},
