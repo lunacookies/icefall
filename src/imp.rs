@@ -14,12 +14,15 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule(
         "editorLineNumber.foreground",
-        palette.base(BaseScale::DimmedFg),
+        palette.base(BaseScale::BarelyVisibleFg),
     );
     builder.add_workspace_rule(
         "editorGutter.background",
         palette.base(BaseScale::LightenedBg),
     );
+
+    builder.add_workspace_rule("statusBar.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DimmedFg));
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
