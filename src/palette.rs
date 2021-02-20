@@ -34,19 +34,20 @@ impl BaseScale {
             Self::BarelyVisibleFg => 0.3,
             Self::DimmedFg => 0.5,
             Self::FadedFg => 0.7,
-            Self::Fg => 0.9,
+            Self::Fg => 0.8,
             Self::BrightFg => 1.0,
         }
     }
 
     fn lightness(self) -> f32 {
-        lerp(self.value(), 0.2..0.93)
+        lerp(self.value(), 0.2..0.96)
     }
 
     fn chroma(self) -> f32 {
         match self {
             Self::DarkBg | Self::Bg => 0.02,
-            Self::Fg | Self::BrightFg => 0.03,
+            Self::Fg => 0.03,
+            Self::BrightFg => 0.02,
             _ => lerp(self.value(), 0.03..0.08),
         }
     }
