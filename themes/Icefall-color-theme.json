@@ -3,14 +3,16 @@
 	"name": "Icefall",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#1B1C24",
-		"editor.foreground": "#C4C9DF",
-		"foreground": "#C4C9DF"
+		"editor.background": "#1A1C26",
+		"editor.foreground": "#CBD0E5",
+		"foreground": "#CBD0E5",
+		"editorLineNumber.foreground": "#4B516C",
+		"editorGutter.background": "#202435"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#959DBE",
+			"foreground": "#98A2CE",
 			"fontStyle": ""
 		},
 		"comment": {

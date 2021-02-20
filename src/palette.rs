@@ -7,35 +7,41 @@ impl Palette {
     const BASE_HUE: f32 = 275.0;
 
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
-        let scale_point = scale.value();
-
-        oklch(
-            lerp(scale_point, 0.23..0.7),
-            lerp(scale_point, 0.015..0.05),
-            Self::BASE_HUE,
-        )
-    }
-
-    pub(crate) fn fg(&self) -> Oklch {
-        oklch(0.84, 0.03, Self::BASE_HUE)
-    }
-
-    pub(crate) fn bright_fg(&self) -> Oklch {
-        oklch(0.93, 0.03, Self::BASE_HUE)
+        oklch(scale.lightness(), scale.chroma(), Self::BASE_HUE)
     }
 }
 
 #[derive(Debug, Clone, Copy)]
 pub(crate) enum BaseScale {
     Bg,
+    LightenedBg,
+    DimmedFg,
     FadedFg,
+    Fg,
+    BrightFg,
 }
 
 impl BaseScale {
     fn value(self) -> f32 {
         match self {
             Self::Bg => 0.0,
-            Self::FadedFg => 1.0,
+            Self::LightenedBg => 0.05,
+            Self::DimmedFg => 0.3,
+            Self::FadedFg => 0.7,
+            Self::Fg => 0.9,
+            Self::BrightFg => 1.0,
+        }
+    }
+
+    fn lightness(self) -> f32 {
+        lerp(self.value(), 0.23..0.93)
+    }
+
+    fn chroma(self) -> f32 {
+        match self {
+            Self::Bg => 0.02,
+            Self::Fg | Self::BrightFg => 0.03,
+            _ => lerp(self.value(), 0.03..0.08),
         }
     }
 }
