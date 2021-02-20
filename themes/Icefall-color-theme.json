@@ -35,6 +35,46 @@
 			"foreground": "#EEF1FF",
 			"fontStyle": ""
 		},
+		"function.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"method.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"type.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"class.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"struct.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"enum.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"union.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"typeAlias.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"interface.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"namespace.declaration": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
 		"string": {
 			"foreground": "#8AB7C2",
 			"fontStyle": ""

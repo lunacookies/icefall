@@ -65,6 +65,22 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("comment"), palette.base(BaseScale::BrightFg));
 
+    builder.add_rules(
+        &[
+            Semantic("function.declaration"),
+            Semantic("method.declaration"),
+            Semantic("type.declaration"),
+            Semantic("class.declaration"),
+            Semantic("struct.declaration"),
+            Semantic("enum.declaration"),
+            Semantic("union.declaration"),
+            Semantic("typeAlias.declaration"),
+            Semantic("interface.declaration"),
+            Semantic("namespace.declaration"),
+        ],
+        palette.orange(),
+    );
+
     builder.add_rule(Semantic("string"), palette.cyan());
 
     builder.add_rules(
