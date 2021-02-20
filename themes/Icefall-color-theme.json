@@ -9,6 +9,7 @@
 		"editorLineNumber.foreground": "#464B65",
 		"editorGutter.background": "#232638",
 		"editor.lineHighlightBackground": "#232638",
+		"sideBar.background": "#14151F",
 		"activityBar.background": "#1C1E28",
 		"activityBar.foreground": "#E2E7FC",
 		"activityBar.inactiveForeground": "#464B65",
