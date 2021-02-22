@@ -84,43 +84,43 @@
 			"fontStyle": ""
 		},
 		"function.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"method.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"type.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"class.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"struct.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"enum.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"union.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"typeAlias.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"interface.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"namespace.declaration": {
-			"foreground": "#DF9D6F",
+			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
 		"string": {

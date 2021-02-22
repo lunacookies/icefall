@@ -147,7 +147,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("interface.declaration"),
             Semantic("namespace.declaration"),
         ],
-        palette.orange(),
+        palette.base(BaseScale::BrightFg),
     );
 
     builder.add_rule(Semantic("string"), palette.cyan());
