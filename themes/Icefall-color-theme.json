@@ -239,6 +239,13 @@
 			}
 		},
 		{
+			"scope": "markup.changed",
+			"settings": {
+				"foreground": "#DF9D6F",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "meta.diff.range",
 			"settings": {
 				"foreground": "#737B9E",

@@ -232,6 +232,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Textmate("markup.inserted"), palette.green());
     builder.add_rule(Textmate("markup.deleted"), palette.red());
+    builder.add_rule(Textmate("markup.changed"), palette.orange());
     builder.add_rules(
         &[
             Textmate("meta.diff.range"),
