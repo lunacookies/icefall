@@ -43,6 +43,8 @@
 		"breadcrumb.foreground": "#737B9E",
 		"editorCodeLens.foreground": "#737B9E",
 		"rust_analyzer.inlayHints.foreground": "#737B9E",
+		"diffEditor.insertedTextBackground": "#9DA47120",
+		"diffEditor.removedTextBackground": "#E6968820",
 		"tree.indentGuidesStroke": "#3F455D",
 		"editorIndentGuide.background": "#3F455D",
 		"editorIndentGuide.activeBackground": "#494F6A",
@@ -211,6 +213,20 @@
 			"scope": "meta.scope.message.git-commit",
 			"settings": {
 				"foreground": "#F6F8FF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.inserted",
+			"settings": {
+				"foreground": "#9DA471",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.deleted",
+			"settings": {
+				"foreground": "#E69688",
 				"fontStyle": ""
 			}
 		}

@@ -119,6 +119,9 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::DarkFg),
     );
 
+    builder.add_workspace_rule("diffEditor.insertedTextBackground", (palette.green(), 0x20));
+    builder.add_workspace_rule("diffEditor.removedTextBackground", (palette.red(), 0x20));
+
     builder.add_workspace_rule("tree.indentGuidesStroke", palette.base(BaseScale::LightBg));
     builder.add_workspace_rule(
         "editorIndentGuide.background",
@@ -226,6 +229,9 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         Textmate("meta.scope.message.git-commit"),
         palette.base(BaseScale::BrightFg),
     );
+
+    builder.add_rule(Textmate("markup.inserted"), palette.green());
+    builder.add_rule(Textmate("markup.deleted"), palette.red());
 
     builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);
     builder.add_rule(Semantic("*.consuming"), FontStyle::Underline);

@@ -12,6 +12,10 @@ impl Palette {
 
     const COLOR_LIGHTNESS: f32 = 0.7;
 
+    pub(crate) fn red(&self) -> Oklch {
+        oklch(Self::COLOR_LIGHTNESS + 0.05, 0.1, 30.0)
+    }
+
     pub(crate) fn orange(&self) -> Oklch {
         oklch(Self::COLOR_LIGHTNESS + 0.05, 0.1, 55.0)
     }
