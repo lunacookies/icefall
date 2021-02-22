@@ -539,6 +539,20 @@
 			}
 		},
 		{
+			"scope": "invalid.deprecated.line-too-long.git-commit",
+			"settings": {
+				"foreground": "#DF9D6F",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "invalid.illegal.line-too-long.git-commit",
+			"settings": {
+				"foreground": "#E69688",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "markup.inserted",
 			"settings": {
 				"foreground": "#9DA471",
