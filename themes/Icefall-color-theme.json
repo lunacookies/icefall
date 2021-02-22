@@ -201,6 +201,14 @@
 			"foreground": "#737B9E",
 			"fontStyle": ""
 		},
+		"magit-ref-name": {
+			"foreground": "#7BA7B2",
+			"fontStyle": ""
+		},
+		"magit-remote-ref-name": {
+			"foreground": "#9DA471",
+			"fontStyle": ""
+		},
 		"*.mutable": {
 			"italic": true
 		},
@@ -227,6 +235,20 @@
 			"scope": "markup.deleted",
 			"settings": {
 				"foreground": "#E69688",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "magit.header",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "magit.entity",
+			"settings": {
+				"foreground": "#B1A5D9",
 				"fontStyle": ""
 			}
 		}
