@@ -183,6 +183,10 @@
 			"foreground": "#A0AAD6",
 			"fontStyle": ""
 		},
+		"*.attribute": {
+			"foreground": "#737B9E",
+			"fontStyle": ""
+		},
 		"*.mutable": {
 			"italic": true
 		},
