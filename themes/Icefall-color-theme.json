@@ -48,15 +48,15 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#959EC8",
+			"foreground": "#A0AAD6",
 			"fontStyle": ""
 		},
 		"operator": {
-			"foreground": "#959EC8",
+			"foreground": "#A0AAD6",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#959EC8",
+			"foreground": "#A0AAD6",
 			"fontStyle": ""
 		},
 		"macro": {
@@ -172,7 +172,7 @@
 			"fontStyle": ""
 		},
 		"namespace": {
-			"foreground": "#959EC8",
+			"foreground": "#A0AAD6",
 			"fontStyle": ""
 		},
 		"*.mutable": {
