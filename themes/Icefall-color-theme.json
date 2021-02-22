@@ -384,6 +384,13 @@
 			}
 		},
 		{
+			"scope": "support.type.property-name",
+			"settings": {
+				"foreground": "#9DA471",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "entity.name.namespace",
 			"settings": {
 				"foreground": "#A0AAD6",

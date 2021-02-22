@@ -272,6 +272,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("property"),
             Textmate("entity.name.variable.field"),
             Textmate("variable.other.object.property"),
+            Textmate("support.type.property-name"),
         ],
         palette.green(),
     );
