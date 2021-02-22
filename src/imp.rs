@@ -180,4 +180,5 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("namespace"), palette.base(BaseScale::DimFg));
 
     builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);
+    builder.add_rule(Semantic("*.consuming"), FontStyle::Underline);
 }
