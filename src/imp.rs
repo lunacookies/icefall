@@ -83,18 +83,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("operator.controlFlow"), palette.green());
     builder.add_rule(Semantic("typeParameter"), palette.green());
 
-    builder.add_rules(
-        &[
-            Semantic("type"),
-            Semantic("class"),
-            Semantic("struct"),
-            Semantic("enum"),
-            Semantic("typeAlias"),
-            Semantic("builtInType"),
-            Semantic("interface"),
-        ],
-        palette.blue(),
-    );
+    builder.add_rule(Semantic("builtinType"), palette.blue());
 
     builder.add_rule(
         Semantic("comment"),

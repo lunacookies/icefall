@@ -58,31 +58,7 @@
 			"foreground": "#9DA471",
 			"fontStyle": ""
 		},
-		"type": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
-		"class": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
-		"struct": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
-		"enum": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
-		"typeAlias": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
-		"builtInType": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
-		"interface": {
+		"builtinType": {
 			"foreground": "#81A1CA",
 			"fontStyle": ""
 		},
