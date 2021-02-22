@@ -71,7 +71,7 @@ impl BaseScale {
         match self {
             Self::DarkBg | Self::Bg => 0.02,
             Self::Fg | Self::BrightFg => 0.01,
-            _ => lerp(self.value(), 0.03..0.05),
+            _ => lerp(self.value(), 0.03..0.08),
         }
     }
 }
