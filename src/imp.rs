@@ -146,6 +146,27 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("diffEditor.insertedTextBackground", (palette.green(), 0x20));
     builder.add_workspace_rule("diffEditor.removedTextBackground", (palette.red(), 0x20));
 
+    builder.add_workspace_rule("terminal.foreground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule("terminal.ansiBlack", palette.base(BaseScale::Bg));
+    builder.add_workspace_rule("terminal.ansiBrightBlack", palette.base(BaseScale::DimFg));
+    builder.add_workspace_rule("terminal.ansiRed", palette.red());
+    builder.add_workspace_rule("terminal.ansiBrightRed", palette.red());
+    builder.add_workspace_rule("terminal.ansiGreen", palette.green());
+    builder.add_workspace_rule("terminal.ansiBrightGreen", palette.green());
+    builder.add_workspace_rule("terminal.ansiYellow", palette.orange());
+    builder.add_workspace_rule("terminal.ansiBrightYellow", palette.orange());
+    builder.add_workspace_rule("terminal.ansiBlue", palette.blue());
+    builder.add_workspace_rule("terminal.ansiBrightBlue", palette.blue());
+    builder.add_workspace_rule("terminal.ansiMagenta", palette.purple());
+    builder.add_workspace_rule("terminal.ansiBrightMagenta", palette.purple());
+    builder.add_workspace_rule("terminal.ansiCyan", palette.cyan());
+    builder.add_workspace_rule("terminal.ansiBrightCyan", palette.cyan());
+    builder.add_workspace_rule("terminal.ansiWhite", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "terminal.ansiBrightWhite",
+        palette.base(BaseScale::BrightFg),
+    );
+
     builder.add_workspace_rule("tree.indentGuidesStroke", palette.base(BaseScale::LightBg));
     builder.add_workspace_rule(
         "editorIndentGuide.background",
