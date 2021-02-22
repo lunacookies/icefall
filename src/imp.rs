@@ -116,6 +116,16 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::DarkFg),
     );
 
+    builder.add_workspace_rule("tree.indentGuidesStroke", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule(
+        "editorIndentGuide.background",
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule(
+        "editorIndentGuide.activeBackground",
+        palette.base(BaseScale::BarelyVisibleFg),
+    );
+
     builder.add_workspace_rule("tab.border", palette.base(BaseScale::MiddleBg));
     builder.add_workspace_rule(
         "editorGroupHeader.border",
