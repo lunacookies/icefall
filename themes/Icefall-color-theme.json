@@ -167,6 +167,10 @@
 			"foreground": "#A9C0DE",
 			"fontStyle": ""
 		},
+		"interface": {
+			"foreground": "#7BA7B2",
+			"fontStyle": ""
+		},
 		"property": {
 			"foreground": "#9DA471",
 			"fontStyle": ""

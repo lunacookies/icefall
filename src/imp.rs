@@ -174,6 +174,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.blue(),
     );
     builder.add_rule(Semantic("enum"), palette.blue_2());
+    builder.add_rule(Semantic("interface"), palette.cyan());
 
     builder.add_rule(Semantic("property"), palette.green());
 
