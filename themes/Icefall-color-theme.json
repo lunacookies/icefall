@@ -206,5 +206,13 @@
 			"underline": true
 		}
 	},
-	"tokenColors": []
+	"tokenColors": [
+		{
+			"scope": "meta.scope.message.git-commit",
+			"settings": {
+				"foreground": "#F6F8FF",
+				"fontStyle": ""
+			}
+		}
+	]
 }
