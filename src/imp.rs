@@ -80,11 +80,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Semantic("macro"), palette.green());
     builder.add_rule(Semantic("selfKeyword"), palette.green());
-
-    builder.add_rules(
-        &[Semantic("operator.controlFlow"), Semantic("typeParameter")],
-        palette.green(),
-    );
+    builder.add_rule(Semantic("operator.controlFlow"), palette.green());
+    builder.add_rule(Semantic("typeParameter"), palette.green());
 
     builder.add_rules(
         &[
