@@ -295,6 +295,33 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_rule(
+        Textmate("markup.heading"),
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_rule(Textmate("markup.bold"), FontStyle::Bold);
+    builder.add_rule(Textmate("markup.italic"), FontStyle::Italic);
+    builder.add_rule(
+        Textmate("string.other.link.title"),
+        palette.base(BaseScale::Fg),
+    );
+    builder.add_rules(
+        &[
+            Textmate("punctuation.definition.heading.markdown"),
+            Textmate("punctuation.definition.bold.markdown"),
+            Textmate("punctuation.definition.italic.markdown"),
+            Textmate("punctuation.definition.raw.markdown"),
+            Textmate("punctuation.definition.string.begin.markdown"),
+            Textmate("punctuation.definition.string.end.markdown"),
+            Textmate("punctuation.definition.metadata.markdown"),
+            Textmate("punctuation.definition.list.begin.markdown"),
+            Textmate("punctuation.definition.markdown"),
+            Textmate("fenced_code.block.language.markdown"),
+            Textmate("meta.separator.markdown"),
+        ],
+        palette.blue(),
+    );
+
+    builder.add_rule(
         Textmate("meta.scope.message.git-commit"),
         palette.base(BaseScale::BrightFg),
     );

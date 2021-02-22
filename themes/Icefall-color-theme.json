@@ -412,6 +412,109 @@
 			}
 		},
 		{
+			"scope": "markup.heading",
+			"settings": {
+				"foreground": "#F6F8FF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "markup.bold",
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope": "markup.italic",
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "string.other.link.title",
+			"settings": {
+				"foreground": "#C3C5CC",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.heading.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.bold.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.italic.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.raw.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.string.begin.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.string.end.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.metadata.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.list.begin.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "punctuation.definition.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "fenced_code.block.language.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "meta.separator.markdown",
+			"settings": {
+				"foreground": "#81A1CA",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "meta.scope.message.git-commit",
 			"settings": {
 				"foreground": "#F6F8FF",
