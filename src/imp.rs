@@ -103,6 +103,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("editorGroup.border", palette.base(BaseScale::LightBg));
     builder.add_workspace_rule("sideBar.border", palette.base(BaseScale::LightBg));
     builder.add_workspace_rule("panel.border", palette.base(BaseScale::LightBg));
+
+    builder.add_workspace_rule("focusBorder", palette.blue());
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
