@@ -71,6 +71,10 @@
 			"foreground": "#9DA471",
 			"fontStyle": ""
 		},
+		"property": {
+			"foreground": "#9DA471",
+			"fontStyle": ""
+		},
 		"comment": {
 			"foreground": "#F6F8FF",
 			"italic": true
