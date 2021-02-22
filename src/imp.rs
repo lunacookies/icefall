@@ -53,6 +53,19 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DarkFg));
     builder.add_workspace_rule("tab.activeBackground", palette.base(BaseScale::MiddleBg));
     builder.add_workspace_rule("tab.activeForeground", palette.base(BaseScale::BrightFg));
+    builder.add_workspace_rule(
+        "tab.unfocusedInactiveBackground",
+        palette.base(BaseScale::Bg),
+    );
+    builder.add_workspace_rule(
+        "tab.unfocusedInactiveForeground",
+        palette.base(BaseScale::BarelyVisibleFg),
+    );
+    builder.add_workspace_rule("tab.unfocusedActiveBackground", palette.base(BaseScale::Bg));
+    builder.add_workspace_rule(
+        "tab.unfocusedActiveForeground",
+        palette.base(BaseScale::DarkFg),
+    );
 
     builder.add_workspace_rule("statusBar.background", palette.base(BaseScale::DarkBg));
     builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
