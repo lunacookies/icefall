@@ -74,7 +74,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule(
         "editorGroupHeader.tabsBackground",
-        palette.base(BaseScale::Bg),
+        palette.base(BaseScale::DarkBg),
+    );
+    builder.add_workspace_rule(
+        "editorGroupHeader.noTabsBackground",
+        palette.base(BaseScale::DarkBg),
     );
     builder.add_workspace_rule("tab.inactiveBackground", palette.base(BaseScale::Bg));
     builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DarkFg));
@@ -96,6 +100,17 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule("statusBar.background", palette.base(BaseScale::DarkBg));
     builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
+
+    builder.add_workspace_rule("titleBar.activeBackground", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule(
+        "titleBar.inactiveBackground",
+        palette.base(BaseScale::DarkBg),
+    );
+    builder.add_workspace_rule("titleBar.activeForeground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "titleBar.inactiveForeground",
+        palette.base(BaseScale::DarkFg),
+    );
 
     builder.add_workspace_rule(
         "editor.selectionBackground",
