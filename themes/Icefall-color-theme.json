@@ -276,6 +276,13 @@
 		{
 			"scope": "magit.header",
 			"settings": {
+				"foreground": "#F6F8FF",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "magit.subheader",
+			"settings": {
 				"foreground": "#81A1CA",
 				"fontStyle": ""
 			}
