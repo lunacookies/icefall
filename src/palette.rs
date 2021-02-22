@@ -4,26 +4,36 @@ use tincture::{Hue, Oklch};
 pub(crate) struct Palette;
 
 impl Palette {
-    const BASE_HUE: f32 = 277.0;
+    const BASE_HUE: f32 = 275.0;
 
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
         oklch(scale.lightness(), scale.chroma(), Self::BASE_HUE)
     }
 
+    const COLOR_LIGHTNESS: f32 = 0.7;
+
     pub(crate) fn orange(&self) -> Oklch {
-        oklch(0.75, 0.1, 55.0)
+        oklch(Self::COLOR_LIGHTNESS + 0.05, 0.1, 55.0)
     }
 
     pub(crate) fn green(&self) -> Oklch {
-        oklch(0.75, 0.08, 115.0)
+        oklch(Self::COLOR_LIGHTNESS, 0.07, 115.0)
     }
 
     pub(crate) fn cyan(&self) -> Oklch {
-        oklch(0.75, 0.05, 215.0)
+        oklch(Self::COLOR_LIGHTNESS, 0.05, 215.0)
+    }
+
+    pub(crate) fn blue(&self) -> Oklch {
+        oklch(Self::COLOR_LIGHTNESS, 0.07, 255.0)
+    }
+
+    pub(crate) fn blue_2(&self) -> Oklch {
+        oklch(Self::COLOR_LIGHTNESS + 0.1, 0.07, 255.0)
     }
 
     pub(crate) fn purple(&self) -> Oklch {
-        oklch(0.75, 0.1, 290.0)
+        oklch(Self::COLOR_LIGHTNESS + 0.05, 0.075, 295.0)
     }
 }
 
@@ -34,8 +44,7 @@ pub(crate) enum BaseScale {
     MiddleBg,
     LightBg,
     BarelyVisibleFg,
-    DimmedFg,
-    FadedFg,
+    DarkFg,
     Fg,
     BrightFg,
 }
@@ -48,9 +57,8 @@ impl BaseScale {
             Self::MiddleBg => 0.1,
             Self::LightBg => 0.25,
             Self::BarelyVisibleFg => 0.3,
-            Self::DimmedFg => 0.5,
-            Self::FadedFg => 0.7,
-            Self::Fg => 0.85,
+            Self::DarkFg => 0.5,
+            Self::Fg => 0.8,
             Self::BrightFg => 1.0,
         }
     }
@@ -63,7 +71,7 @@ impl BaseScale {
         match self {
             Self::DarkBg | Self::Bg => 0.02,
             Self::Fg | Self::BrightFg => 0.01,
-            _ => lerp(self.value(), 0.03..0.08),
+            _ => lerp(self.value(), 0.03..0.05),
         }
     }
 }
