@@ -76,6 +76,12 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_workspace_rule("selection.background", palette.base(BaseScale::LightBg));
 
+    builder.add_workspace_rule("input.background", palette.base(BaseScale::MiddleBg));
+    builder.add_workspace_rule(
+        "input.placeholderForeground",
+        palette.base(BaseScale::DarkFg),
+    );
+
     builder.add_workspace_rule("editorCodeLens.foreground", palette.base(BaseScale::DarkFg));
     builder.add_workspace_rule(
         "rust_analyzer.inlayHints.foreground",
