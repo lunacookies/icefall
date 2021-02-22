@@ -147,8 +147,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("diffEditor.removedTextBackground", (palette.red(), 0x20));
 
     builder.add_workspace_rule("terminal.foreground", palette.base(BaseScale::Fg));
-    builder.add_workspace_rule("terminal.ansiBlack", palette.base(BaseScale::Bg));
-    builder.add_workspace_rule("terminal.ansiBrightBlack", palette.base(BaseScale::DimFg));
+    builder.add_workspace_rule("terminal.ansiBlack", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule("terminal.ansiBrightBlack", palette.base(BaseScale::DarkFg));
     builder.add_workspace_rule("terminal.ansiRed", palette.red());
     builder.add_workspace_rule("terminal.ansiBrightRed", palette.red());
     builder.add_workspace_rule("terminal.ansiGreen", palette.green());
