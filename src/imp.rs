@@ -111,12 +111,10 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rule(Semantic("keyword"), palette.blue());
+    builder.add_rule(Semantic("keyword"), palette.base(BaseScale::DimFg));
+    builder.add_rule(Semantic("operator"), palette.base(BaseScale::DimFg));
 
-    builder.add_rules(
-        &[Semantic("function"), Semantic("method")],
-        palette.blue_2(),
-    );
+    builder.add_rules(&[Semantic("function"), Semantic("method")], palette.blue());
 
     builder.add_rule(Semantic("macro"), palette.green());
     builder.add_rule(Semantic("selfKeyword"), palette.green());
