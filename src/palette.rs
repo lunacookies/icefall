@@ -28,6 +28,10 @@ impl Palette {
         oklch(Self::COLOR_LIGHTNESS, 0.07, 255.0)
     }
 
+    pub(crate) fn blue_2(&self) -> Oklch {
+        oklch(Self::COLOR_LIGHTNESS + 0.1, 0.05, 255.0)
+    }
+
     pub(crate) fn purple(&self) -> Oklch {
         oklch(Self::COLOR_LIGHTNESS + 0.05, 0.075, 295.0)
     }

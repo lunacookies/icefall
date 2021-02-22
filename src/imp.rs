@@ -161,6 +161,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.purple(),
     );
 
+    builder.add_rule(Semantic("enum"), palette.blue_2());
+
     builder.add_rule(Semantic("lifetime"), palette.green());
 
     builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);

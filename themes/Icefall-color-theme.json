@@ -155,6 +155,10 @@
 			"foreground": "#B1A5D9",
 			"fontStyle": ""
 		},
+		"enum": {
+			"foreground": "#A9C0DE",
+			"fontStyle": ""
+		},
 		"lifetime": {
 			"foreground": "#9DA471",
 			"fontStyle": ""
