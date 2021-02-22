@@ -239,6 +239,34 @@
 			}
 		},
 		{
+			"scope": "meta.diff.range",
+			"settings": {
+				"foreground": "#737B9E",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "meta.diff.header",
+			"settings": {
+				"foreground": "#737B9E",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "meta.diff.index",
+			"settings": {
+				"foreground": "#737B9E",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "comment.line.number-sign.git-commit",
+			"settings": {
+				"foreground": "#737B9E",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "magit.header",
 			"settings": {
 				"foreground": "#81A1CA",

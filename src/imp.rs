@@ -232,6 +232,15 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_rule(Textmate("markup.inserted"), palette.green());
     builder.add_rule(Textmate("markup.deleted"), palette.red());
+    builder.add_rules(
+        &[
+            Textmate("meta.diff.range"),
+            Textmate("meta.diff.header"),
+            Textmate("meta.diff.index"),
+            Textmate("comment.line.number-sign.git-commit"),
+        ],
+        palette.base(BaseScale::DarkFg),
+    );
 
     builder.add_rule(Textmate("magit.header"), palette.blue());
     builder.add_rule(Semantic("magit-ref-name"), palette.cyan());
