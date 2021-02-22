@@ -74,6 +74,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.blue_2(),
     );
 
+    builder.add_rule(Semantic("macro"), palette.green());
+
     builder.add_rules(
         &[Semantic("operator.controlFlow"), Semantic("typeParameter")],
         palette.green(),

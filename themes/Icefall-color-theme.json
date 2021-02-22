@@ -41,6 +41,10 @@
 			"foreground": "#A0C0EB",
 			"fontStyle": ""
 		},
+		"macro": {
+			"foreground": "#9DA471",
+			"fontStyle": ""
+		},
 		"operator.controlFlow": {
 			"foreground": "#9DA471",
 			"fontStyle": ""
