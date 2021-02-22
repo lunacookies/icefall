@@ -321,8 +321,11 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_rule(Textmate("markup.bold"), FontStyle::Bold);
     builder.add_rule(Textmate("markup.italic"), FontStyle::Italic);
-    builder.add_rule(
-        Textmate("string.other.link.title"),
+    builder.add_rules(
+        &[
+            Textmate("string.other.link.title.markdown"),
+            Textmate("constant.other.reference.link.markdown"),
+        ],
         palette.base(BaseScale::Fg),
     );
     builder.add_rules(
@@ -335,6 +338,10 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("punctuation.definition.string.end.markdown"),
             Textmate("punctuation.definition.metadata.markdown"),
             Textmate("punctuation.definition.list.begin.markdown"),
+            Textmate("punctuation.definition.constant.markdown"),
+            Textmate("punctuation.definition.constant.begin.markdown"),
+            Textmate("punctuation.definition.constant.end.markdown"),
+            Textmate("punctuation.separator.key-value.markdown"),
             Textmate("punctuation.definition.markdown"),
             Textmate("fenced_code.block.language.markdown"),
             Textmate("meta.separator.markdown"),
