@@ -8,7 +8,7 @@ so why waste colours on differentiating that?
 You can’t tell whether `Foo` is an enum or a struct just by looking at it;
 Icefall colours things depending on semantics, rather than syntax.
 
-The colour palette is taken almost entirely from the excellent [Iceberg](https://cocopon.github.io/iceberg.vim/).
+The colour palette is taken almost entirely from the excellent [Iceberg][iceberg].
 
 The VS Code theme file is generated using [mottle](https://github.com/arzg/mottle),
 and the colour palette is generated with [tincture](https://github.com/arzg/tincture).
