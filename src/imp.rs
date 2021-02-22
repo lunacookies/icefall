@@ -17,6 +17,10 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         "editorLineNumber.foreground",
         palette.base(BaseScale::BarelyVisibleFg),
     );
+    builder.add_workspace_rule(
+        "editorLineNumber.activeForeground",
+        palette.base(BaseScale::Fg),
+    );
     builder.add_workspace_rule("editorGutter.background", palette.base(BaseScale::MiddleBg));
 
     builder.add_workspace_rule(
