@@ -173,6 +173,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("keyword"),
             Semantic("operator"),
             Semantic("builtinType"),
+            Textmate("keyword"),
+            Textmate("storage"),
         ],
         palette.base(BaseScale::DimFg),
     );
@@ -180,20 +182,29 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rules(
         &[
             Semantic("macro"),
+            Textmate("keyword.control.directive"),
+            Textmate("keyword.preprocessor"),
+            Textmate("punctuation.separator.hash.cs"),
             Semantic("operator.controlFlow"),
             Semantic("typeParameter"),
             Semantic("lifetime"),
             Semantic("parameter"),
+            Textmate("variable.parameter"),
+            Textmate("entity.name.variable.parameter"),
         ],
         palette.orange(),
     );
 
-    builder.add_rule(
-        Semantic("comment"),
+    builder.add_rules(
+        &[Semantic("comment"), Textmate("comment")],
         (palette.base(BaseScale::BrightFg), FontStyle::Italic),
     );
-    builder.add_rule(
-        Semantic("comment.documentation"),
+    builder.add_rules(
+        &[
+            Semantic("comment.documentation"),
+            Textmate("comment.block.documentation"),
+            Textmate("comment.block.javadoc"),
+        ],
         palette.base(BaseScale::BrightFg),
     );
 
@@ -210,11 +221,16 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("typeAlias.declaration"),
             Semantic("interface.declaration"),
             Semantic("namespace.declaration"),
+            Textmate("entity.name.type"),
+            Textmate("entity.name.package"),
+            Textmate("entity.name.function.go"),
+            Textmate("entity.name.function.python"),
+            Textmate("variable.other.enummember"),
         ],
         palette.base(BaseScale::BrightFg),
     );
 
-    builder.add_rule(Semantic("string"), palette.cyan());
+    builder.add_rules(&[Semantic("string"), Textmate("string")], palette.cyan());
 
     builder.add_rules(
         &[
@@ -223,22 +239,50 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("formatSpecifier"),
             Semantic("enumMember"),
             Semantic("*.constant"),
+            Textmate("constant"),
+            Textmate("entity.name.variable.preprocessor"),
         ],
         palette.purple(),
     );
 
     builder.add_rules(
-        &[Semantic("type"), Semantic("class"), Semantic("struct")],
+        &[
+            Semantic("type"),
+            Semantic("class"),
+            Semantic("struct"),
+            Textmate("entity.name.type.rust"),
+            Textmate("storage.type.cs"),
+        ],
         palette.blue(),
     );
     builder.add_rule(Semantic("enum"), palette.blue_2());
     builder.add_rule(Semantic("interface"), palette.cyan());
 
-    builder.add_rule(Semantic("property"), palette.green());
+    builder.add_rules(
+        &[
+            Semantic("property"),
+            Textmate("entity.name.variable.field"),
+            Textmate("variable.other.object.property"),
+        ],
+        palette.green(),
+    );
 
-    builder.add_rule(Semantic("namespace"), palette.base(BaseScale::DimFg));
+    builder.add_rules(
+        &[
+            Semantic("namespace"),
+            Textmate("entity.name.namespace"),
+            Textmate("entity.name.type.namespace"),
+        ],
+        palette.base(BaseScale::DimFg),
+    );
 
-    builder.add_rule(Semantic("*.attribute"), palette.base(BaseScale::DarkFg));
+    builder.add_rules(
+        &[
+            Semantic("*.attribute"),
+            Textmate("entity.name.function.decorator"),
+        ],
+        palette.base(BaseScale::DarkFg),
+    );
 
     builder.add_rule(
         Textmate("meta.scope.message.git-commit"),
