@@ -171,6 +171,10 @@
 			"foreground": "#9DA471",
 			"fontStyle": ""
 		},
+		"namespace": {
+			"foreground": "#959EC8",
+			"fontStyle": ""
+		},
 		"*.mutable": {
 			"italic": true
 		}
