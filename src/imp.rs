@@ -28,10 +28,10 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::MiddleBg),
     );
 
-    builder.add_workspace_rule("sideBar.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule("sideBar.background", palette.base(BaseScale::Bg));
     builder.add_workspace_rule(
         "sideBarSectionHeader.background",
-        palette.base(BaseScale::DarkBg),
+        palette.base(BaseScale::Bg),
     );
     builder.add_workspace_rule(
         "sideBarSectionHeader.foreground",
