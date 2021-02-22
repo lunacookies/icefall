@@ -81,6 +81,21 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         "rust_analyzer.inlayHints.foreground",
         palette.base(BaseScale::DarkFg),
     );
+
+    builder.add_workspace_rule("tab.border", palette.base(BaseScale::MiddleBg));
+    builder.add_workspace_rule(
+        "editorGroupHeader.border",
+        palette.base(BaseScale::MiddleBg),
+    );
+    builder.add_workspace_rule(
+        "editorGroupHeader.tabsBorder",
+        palette.base(BaseScale::MiddleBg),
+    );
+    builder.add_workspace_rule("statusBar.border", palette.base(BaseScale::MiddleBg));
+
+    builder.add_workspace_rule("editorGroup.border", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule("sideBar.border", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule("panel.border", palette.base(BaseScale::LightBg));
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
