@@ -34,11 +34,11 @@
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#A0C0EB",
+			"foreground": "#A9C0DE",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#A0C0EB",
+			"foreground": "#A9C0DE",
 			"fontStyle": ""
 		},
 		"macro": {
