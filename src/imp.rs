@@ -99,7 +99,16 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_workspace_rule("statusBar.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule(
+        "statusBar.debuggingBackground",
+        palette.base(BaseScale::DarkBg),
+    );
+    builder.add_workspace_rule(
+        "statusBar.noFolderBackground",
+        palette.base(BaseScale::DarkBg),
+    );
     builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
+    builder.add_workspace_rule("statusBar.debuggingForeground", palette.orange());
 
     builder.add_workspace_rule("titleBar.activeBackground", palette.base(BaseScale::DarkBg));
     builder.add_workspace_rule(
