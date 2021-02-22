@@ -32,6 +32,7 @@
 		"selection.background": "#3F455D",
 		"input.background": "#202335",
 		"input.placeholderForeground": "#737B9E",
+		"breadcrumb.foreground": "#737B9E",
 		"editorCodeLens.foreground": "#737B9E",
 		"rust_analyzer.inlayHints.foreground": "#737B9E",
 		"tab.border": "#202335",
