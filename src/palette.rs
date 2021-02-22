@@ -54,7 +54,7 @@ impl BaseScale {
         match self {
             Self::DarkBg => 0.0,
             Self::Bg => 0.05,
-            Self::MiddleBg => 0.1,
+            Self::MiddleBg => 0.08,
             Self::LightBg => 0.25,
             Self::BarelyVisibleFg => 0.3,
             Self::DarkFg => 0.5,
