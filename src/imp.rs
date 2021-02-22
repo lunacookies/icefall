@@ -148,6 +148,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("class.declaration"),
             Semantic("struct.declaration"),
             Semantic("enum.declaration"),
+            Semantic("enumMember.declaration"),
             Semantic("union.declaration"),
             Semantic("typeAlias.declaration"),
             Semantic("interface.declaration"),

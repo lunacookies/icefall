@@ -111,6 +111,10 @@
 			"foreground": "#F6F8FF",
 			"fontStyle": ""
 		},
+		"enumMember.declaration": {
+			"foreground": "#F6F8FF",
+			"fontStyle": ""
+		},
 		"union.declaration": {
 			"foreground": "#F6F8FF",
 			"fontStyle": ""
