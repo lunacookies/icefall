@@ -111,9 +111,14 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
-    builder.add_rule(Semantic("keyword"), palette.base(BaseScale::DimFg));
-    builder.add_rule(Semantic("operator"), palette.base(BaseScale::DimFg));
-    builder.add_rule(Semantic("builtinType"), palette.blue());
+    builder.add_rules(
+        &[
+            Semantic("keyword"),
+            Semantic("operator"),
+            Semantic("builtinType"),
+        ],
+        palette.base(BaseScale::DimFg),
+    );
 
     builder.add_rule(Semantic("macro"), palette.green());
     builder.add_rule(Semantic("operator.controlFlow"), palette.green());
