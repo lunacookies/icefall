@@ -159,7 +159,7 @@
 			"fontStyle": ""
 		},
 		"*.mutable": {
-			"underline": true
+			"italic": true
 		}
 	},
 	"tokenColors": []
