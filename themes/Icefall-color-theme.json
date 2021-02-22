@@ -63,10 +63,6 @@
 			"foreground": "#9DA471",
 			"fontStyle": ""
 		},
-		"selfKeyword": {
-			"foreground": "#9DA471",
-			"fontStyle": ""
-		},
 		"operator.controlFlow": {
 			"foreground": "#9DA471",
 			"fontStyle": ""
