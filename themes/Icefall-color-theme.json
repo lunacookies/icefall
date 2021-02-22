@@ -55,14 +55,6 @@
 			"foreground": "#959EC8",
 			"fontStyle": ""
 		},
-		"function": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
-		"method": {
-			"foreground": "#81A1CA",
-			"fontStyle": ""
-		},
 		"macro": {
 			"foreground": "#9DA471",
 			"fontStyle": ""
@@ -153,6 +145,18 @@
 		},
 		"*.constant": {
 			"foreground": "#B1A5D9",
+			"fontStyle": ""
+		},
+		"type": {
+			"foreground": "#81A1CA",
+			"fontStyle": ""
+		},
+		"class": {
+			"foreground": "#81A1CA",
+			"fontStyle": ""
+		},
+		"struct": {
+			"foreground": "#81A1CA",
 			"fontStyle": ""
 		},
 		"enum": {

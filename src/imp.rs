@@ -114,8 +114,6 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Semantic("keyword"), palette.base(BaseScale::DimFg));
     builder.add_rule(Semantic("operator"), palette.base(BaseScale::DimFg));
 
-    builder.add_rules(&[Semantic("function"), Semantic("method")], palette.blue());
-
     builder.add_rule(Semantic("macro"), palette.green());
     builder.add_rule(Semantic("selfKeyword"), palette.green());
     builder.add_rule(Semantic("operator.controlFlow"), palette.green());
@@ -161,6 +159,10 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.purple(),
     );
 
+    builder.add_rules(
+        &[Semantic("type"), Semantic("class"), Semantic("struct")],
+        palette.blue(),
+    );
     builder.add_rule(Semantic("enum"), palette.blue_2());
 
     builder.add_rule(Semantic("lifetime"), palette.green());
