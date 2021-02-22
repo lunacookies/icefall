@@ -37,7 +37,7 @@
 		"statusBar.background": "#13151F",
 		"statusBar.foreground": "#737B9E",
 		"editor.selectionBackground": "#3F455D",
-		"selection.background": "#3F455D",
+		"selection.background": "#A0AAD6",
 		"input.background": "#202335",
 		"input.placeholderForeground": "#737B9E",
 		"breadcrumb.foreground": "#737B9E",

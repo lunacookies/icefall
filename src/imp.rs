@@ -101,7 +101,10 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         "editor.selectionBackground",
         palette.base(BaseScale::LightBg),
     );
-    builder.add_workspace_rule("selection.background", palette.base(BaseScale::LightBg));
+
+    // Text selections outside of the editor have their colour darkened,
+    // so we compensate by choosing a ridiculously bright selection colour.
+    builder.add_workspace_rule("selection.background", palette.base(BaseScale::DimFg));
 
     builder.add_workspace_rule("input.background", palette.base(BaseScale::MiddleBg));
     builder.add_workspace_rule(
