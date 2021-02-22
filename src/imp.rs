@@ -306,6 +306,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_rule(Textmate("magit.subheader"), palette.blue());
     builder.add_rule(Semantic("magit-ref-name"), palette.cyan());
     builder.add_rule(Semantic("magit-remote-ref-name"), palette.green());
+    builder.add_rule(Semantic("magit-tag-name"), palette.blue_2());
     builder.add_rule(Textmate("magit.entity"), palette.purple());
 
     builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);

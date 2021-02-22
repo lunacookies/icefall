@@ -214,6 +214,10 @@
 			"foreground": "#9DA471",
 			"fontStyle": ""
 		},
+		"magit-tag-name": {
+			"foreground": "#A9C0DE",
+			"fontStyle": ""
+		},
 		"*.mutable": {
 			"italic": true
 		},
