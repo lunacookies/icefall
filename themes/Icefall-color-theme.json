@@ -261,6 +261,13 @@
 			}
 		},
 		{
+			"scope": "variable.language.self",
+			"settings": {
+				"foreground": "#A0AAD6",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "keyword.control.directive",
 			"settings": {
 				"foreground": "#DF9D6F",

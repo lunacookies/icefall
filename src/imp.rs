@@ -205,6 +205,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("builtinType"),
             Textmate("keyword"),
             Textmate("storage"),
+            Textmate("variable.language.self"),
         ],
         palette.base(BaseScale::DimFg),
     );
