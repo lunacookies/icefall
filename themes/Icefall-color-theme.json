@@ -60,19 +60,23 @@
 			"fontStyle": ""
 		},
 		"macro": {
-			"foreground": "#9DA471",
+			"foreground": "#DF9D6F",
 			"fontStyle": ""
 		},
 		"operator.controlFlow": {
-			"foreground": "#9DA471",
+			"foreground": "#DF9D6F",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#9DA471",
+			"foreground": "#DF9D6F",
 			"fontStyle": ""
 		},
-		"property": {
-			"foreground": "#9DA471",
+		"lifetime": {
+			"foreground": "#DF9D6F",
+			"fontStyle": ""
+		},
+		"parameter": {
+			"foreground": "#DF9D6F",
 			"fontStyle": ""
 		},
 		"comment": {
@@ -163,7 +167,7 @@
 			"foreground": "#A9C0DE",
 			"fontStyle": ""
 		},
-		"lifetime": {
+		"property": {
 			"foreground": "#9DA471",
 			"fontStyle": ""
 		},

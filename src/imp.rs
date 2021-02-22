@@ -120,10 +120,16 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::DimFg),
     );
 
-    builder.add_rule(Semantic("macro"), palette.green());
-    builder.add_rule(Semantic("operator.controlFlow"), palette.green());
-    builder.add_rule(Semantic("typeParameter"), palette.green());
-    builder.add_rule(Semantic("property"), palette.green());
+    builder.add_rules(
+        &[
+            Semantic("macro"),
+            Semantic("operator.controlFlow"),
+            Semantic("typeParameter"),
+            Semantic("lifetime"),
+            Semantic("parameter"),
+        ],
+        palette.orange(),
+    );
 
     builder.add_rule(
         Semantic("comment"),
@@ -169,7 +175,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_rule(Semantic("enum"), palette.blue_2());
 
-    builder.add_rule(Semantic("lifetime"), palette.green());
+    builder.add_rule(Semantic("property"), palette.green());
 
     builder.add_rule(Semantic("*.mutable"), FontStyle::Italic);
 }
