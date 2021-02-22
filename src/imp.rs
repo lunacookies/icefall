@@ -30,6 +30,31 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::MiddleBg));
 
+    builder.add_workspace_rule("list.focusForeground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "list.activeSelectionForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_workspace_rule(
+        "list.inactiveSelectionForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_workspace_rule(
+        "list.highlightForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+
+    builder.add_workspace_rule("list.focusBackground", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule(
+        "list.activeSelectionBackground",
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule(
+        "list.inactiveSelectionBackground",
+        palette.base(BaseScale::MiddleBg),
+    );
+    builder.add_workspace_rule("list.hoverBackground", palette.base(BaseScale::Bg));
+
     builder.add_workspace_rule("sideBar.background", palette.base(BaseScale::Bg));
     builder.add_workspace_rule(
         "sideBarSectionHeader.background",
