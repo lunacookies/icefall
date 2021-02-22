@@ -28,6 +28,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::MiddleBg),
     );
 
+    builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::MiddleBg));
+
     builder.add_workspace_rule("sideBar.background", palette.base(BaseScale::Bg));
     builder.add_workspace_rule(
         "sideBarSectionHeader.background",
@@ -103,6 +105,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("editorGroup.border", palette.base(BaseScale::LightBg));
     builder.add_workspace_rule("sideBar.border", palette.base(BaseScale::LightBg));
     builder.add_workspace_rule("panel.border", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rule("editorWidget.border", palette.base(BaseScale::LightBg));
 
     builder.add_workspace_rule("focusBorder", palette.blue());
 }

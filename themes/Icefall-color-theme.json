@@ -10,6 +10,7 @@
 		"editorLineNumber.activeForeground": "#C3C5CC",
 		"editorGutter.background": "#202335",
 		"editor.lineHighlightBackground": "#202335",
+		"editorWidget.background": "#202335",
 		"sideBar.background": "#1C1E29",
 		"sideBarSectionHeader.background": "#1C1E29",
 		"sideBarSectionHeader.foreground": "#F6F8FF",
@@ -41,6 +42,7 @@
 		"editorGroup.border": "#3F455D",
 		"sideBar.border": "#3F455D",
 		"panel.border": "#3F455D",
+		"editorWidget.border": "#3F455D",
 		"focusBorder": "#81A1CA"
 	},
 	"semanticHighlighting": true,
