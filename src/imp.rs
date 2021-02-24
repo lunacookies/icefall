@@ -28,6 +28,24 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::MiddleBg),
     );
 
+    builder.add_workspace_rule(
+        "editor.findMatchHighlightBackground",
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule(
+        "editor.findMatchBackground",
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule("editor.findMatchBorder", palette.base(BaseScale::DarkFg));
+    builder.add_workspace_rule(
+        "minimap.findMatchHighlight",
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule(
+        "editorOverviewRuler.findMatchForeground",
+        palette.base(BaseScale::LightBg),
+    );
+
     builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::MiddleBg));
 
     builder.add_workspace_rule("list.focusForeground", palette.base(BaseScale::Fg));
