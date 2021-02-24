@@ -391,6 +391,13 @@
 			}
 		},
 		{
+			"scope": "support.constant",
+			"settings": {
+				"foreground": "#B1A5D9",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": "entity.name.variable.preprocessor",
 			"settings": {
 				"foreground": "#B1A5D9",
@@ -478,6 +485,13 @@
 			"scope": "punctuation.section.embedded.end.hugo",
 			"settings": {
 				"foreground": "#737B9E",
+				"fontStyle": ""
+			}
+		},
+		{
+			"scope": "entity.other.attribute-name",
+			"settings": {
+				"foreground": "#81A1CA",
 				"fontStyle": ""
 			}
 		},

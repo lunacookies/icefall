@@ -301,6 +301,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("enumMember"),
             Semantic("*.constant"),
             Textmate("constant"),
+            Textmate("support.constant"),
             Textmate("entity.name.variable.preprocessor"),
         ],
         palette.purple(),
@@ -348,6 +349,8 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         ],
         palette.base(BaseScale::DarkFg),
     );
+
+    builder.add_rule(Textmate("entity.other.attribute-name"), palette.blue());
 
     builder.add_rules(
         &[
