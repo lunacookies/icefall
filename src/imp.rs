@@ -231,6 +231,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         &[
             Semantic("keyword"),
             Semantic("operator"),
+            Textmate("punctuation.separator"),
             Semantic("builtinType"),
             Textmate("keyword"),
             Textmate("storage"),
@@ -324,6 +325,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("entity.name.variable.field"),
             Textmate("variable.other.object.property"),
             Textmate("support.type.property-name"),
+            Textmate("entity.other.attribute-name"),
         ],
         palette.green(),
     );
@@ -335,6 +337,16 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("entity.name.type.namespace"),
         ],
         palette.base(BaseScale::DimFg),
+    );
+
+    builder.add_rule(Textmate("entity.name.tag"), palette.blue());
+    builder.add_rules(
+        &[
+            Textmate("punctuation.definition.tag"),
+            Textmate("punctuation.section.embedded.begin.hugo"),
+            Textmate("punctuation.section.embedded.end.hugo"),
+        ],
+        palette.base(BaseScale::DarkFg),
     );
 
     builder.add_rules(
