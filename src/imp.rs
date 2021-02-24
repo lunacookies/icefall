@@ -170,6 +170,14 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BrightFg),
     );
 
+    builder.add_workspace_rule("editorCursor.foreground", palette.base(BaseScale::BrightFg));
+    builder.add_workspace_rule("editorCursor.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule(
+        "terminalCursor.foreground",
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_workspace_rule("terminalCursor.background", palette.base(BaseScale::DarkBg));
+
     builder.add_workspace_rule("tree.indentGuidesStroke", palette.base(BaseScale::LightBg));
     builder.add_workspace_rule(
         "editorIndentGuide.background",
