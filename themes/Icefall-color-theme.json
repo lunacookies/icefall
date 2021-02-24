@@ -53,6 +53,8 @@
 		"rust_analyzer.inlayHints.foreground": "#737B9E",
 		"diffEditor.insertedTextBackground": "#9DA47120",
 		"diffEditor.removedTextBackground": "#E6968820",
+		"textLink.foreground": "#81A1CA",
+		"textLink.activeForeground": "#A9C0DE",
 		"terminal.foreground": "#C3C5CC",
 		"terminal.ansiBlack": "#3F455D",
 		"terminal.ansiBrightBlack": "#737B9E",
