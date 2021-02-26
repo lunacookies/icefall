@@ -317,6 +317,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
             "sideBar.border",
             "panel.border",
             "editorWidget.border",
+            "editorOverviewRuler.border",
         ],
         palette.base(BaseScale::LightBg),
     );
