@@ -1,10 +1,10 @@
 <h1 align="center">Icefall</h1>
+<h3 align="center">A cold, clear theme.</h3>
 
 ![](https://raw.githubusercontent.com/arzg/resources/master/icefall.png)
 
 <p align="center"><em>The font in this screenshot is <a href="https://input.fontbureau.com">Input Sans</a>.</em></p>
 
-A cold, clear theme.
 Icefall has subdued syntax highlighting,
 opting instead to use its colours for semantic highlighting.
 You can tell at a glance whether something is a function call,
