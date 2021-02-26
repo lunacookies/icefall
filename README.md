@@ -3,7 +3,7 @@
 
 ![](https://raw.githubusercontent.com/arzg/resources/master/icefall.png)
 
-<p align="center"><em>The font in this screenshot is <a href="https://input.fontbureau.com">Input Sans</a>.</em></p>
+<h6 align="center"><em>The font in this screenshot is <a href="https://input.fontbureau.com">Input Sans</a>.</em></h6>
 
 Icefall has subdued syntax highlighting,
 opting instead to use its colours for semantic highlighting.
