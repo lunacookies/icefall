@@ -186,13 +186,13 @@
 			"foreground": "#DF9D6F",
 			"fontStyle": ""
 		},
-		"lifetime": {
-			"foreground": "#DF9D6F",
-			"fontStyle": ""
-		},
 		"parameter": {
 			"foreground": "#DF9D6F",
 			"fontStyle": ""
+		},
+		"lifetime": {
+			"foreground": "#DF9D6F",
+			"italic": true
 		},
 		"comment": {
 			"foreground": "#F6F8FF",

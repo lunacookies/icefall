@@ -384,13 +384,13 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("punctuation.separator.hash.cs"),
             Semantic("operator.controlFlow"),
             Semantic("typeParameter"),
-            Semantic("lifetime"),
             Semantic("parameter"),
             Textmate("variable.parameter"),
             Textmate("entity.name.variable.parameter"),
         ],
         palette.orange(),
     );
+    builder.add_rule(Semantic("lifetime"), (palette.orange(), FontStyle::Italic));
 
     builder.add_rules(
         &[Semantic("comment"), Textmate("comment")],
