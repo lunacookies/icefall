@@ -7,7 +7,7 @@
   "repository": {
     "url": "https://github.com/arzg/icefall"
   },
-  "version": "0.2.14",
+  "version": "0.2.15",
   "engines": {
     "vscode": "^1.41.0"
   },
