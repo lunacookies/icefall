@@ -1,4 +1,12 @@
+<center>
+
 # Icefall
+
+![](https://raw.githubusercontent.com/arzg/resources/master/icefall.png)
+
+_The font in this screenshot is [Input Sans](https://input.fontbureau.com)._
+
+</center>
 
 A cold, clear theme.
 Icefall has subdued syntax highlighting,
