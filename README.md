@@ -2,7 +2,7 @@
 
 ![](https://raw.githubusercontent.com/arzg/resources/master/icefall.png)
 
-<p align="center">The font in this screenshot is <a href="https://input.fontbureau.com">Input Sans</a>.</p>
+<p align="center"><em>The font in this screenshot is <a href="https://input.fontbureau.com">Input Sans</a>.</em></p>
 
 A cold, clear theme.
 Icefall has subdued syntax highlighting,
