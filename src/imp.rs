@@ -462,7 +462,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Textmate("entity.name.variable.field"),
             Textmate("variable.other.object.property"),
             Textmate("support.type.property-name"),
-            Textmate("entity.other.attribute-name"),
+            Textmate("entity.other.attribute-name.html"),
         ],
         palette.green(),
     );

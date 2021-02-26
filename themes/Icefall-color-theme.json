@@ -505,7 +505,7 @@
 			}
 		},
 		{
-			"scope": "entity.other.attribute-name",
+			"scope": "entity.other.attribute-name.html",
 			"settings": {
 				"foreground": "#9DA471",
 				"fontStyle": ""
