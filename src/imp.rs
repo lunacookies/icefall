@@ -31,6 +31,14 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_workspace_rules(
+        &[
+            "editor.rangeHighlightBackground",
+            "editorOverviewRuler.rangeHighlightForeground",
+        ],
+        palette.base(BaseScale::LightBg),
+    );
+
+    builder.add_workspace_rules(
         &["minimapSlider.background", "scrollbarSlider.background"],
         (palette.base(BaseScale::LightBg), 0x40),
     );

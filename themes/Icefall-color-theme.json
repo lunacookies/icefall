@@ -10,6 +10,8 @@
 		"editorLineNumber.activeForeground": "#C3C5CC",
 		"editorGutter.background": "#202335",
 		"editor.lineHighlightBackground": "#202335",
+		"editor.rangeHighlightBackground": "#3F455D",
+		"editorOverviewRuler.rangeHighlightForeground": "#3F455D",
 		"minimapSlider.background": "#3F455D40",
 		"scrollbarSlider.background": "#3F455D40",
 		"minimapSlider.hoverBackground": "#3F455D60",
