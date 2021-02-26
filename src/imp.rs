@@ -284,6 +284,15 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_workspace_rule("peekView.border", palette.base(BaseScale::BarelyVisibleFg));
 
+    builder.add_workspace_rules(
+        &["badge.background", "activityBarBadge.background"],
+        palette.blue_2(),
+    );
+    builder.add_workspace_rules(
+        &["badge.foreground", "activityBarBadge.foreground"],
+        palette.base(BaseScale::Bg),
+    );
+
     builder.add_workspace_rule("textLink.foreground", palette.blue());
     builder.add_workspace_rule("textLink.activeForeground", palette.blue_2());
 
