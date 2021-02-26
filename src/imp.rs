@@ -31,6 +31,25 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_workspace_rules(
+        &["minimapSlider.background", "scrollbarSlider.background"],
+        (palette.base(BaseScale::LightBg), 0x40),
+    );
+    builder.add_workspace_rules(
+        &[
+            "minimapSlider.hoverBackground",
+            "scrollbarSlider.hoverBackground",
+        ],
+        (palette.base(BaseScale::LightBg), 0x60),
+    );
+    builder.add_workspace_rules(
+        &[
+            "minimapSlider.activeBackground",
+            "scrollbarSlider.activeBackground",
+        ],
+        (palette.base(BaseScale::LightBg), 0xA0),
+    );
+
+    builder.add_workspace_rules(
         &[
             "editor.findMatchHighlightBackground",
             "editor.findMatchBackground",
