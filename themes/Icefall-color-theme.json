@@ -314,6 +314,10 @@
 			"foreground": "#A9C0DE",
 			"fontStyle": ""
 		},
+		"unresolvedReference": {
+			"foreground": "#E69688",
+			"bold": true
+		},
 		"*.mutable": {
 			"italic": true
 		},
