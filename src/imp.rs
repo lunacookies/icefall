@@ -161,6 +161,20 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     // so we compensate by choosing a ridiculously bright selection colour.
     builder.add_workspace_rule("selection.background", palette.base(BaseScale::DimFg));
 
+    builder.add_workspace_rules(
+        &[
+            "editor.hoverHighlightBackground",
+            "editor.wordHighlightBackground",
+            "editorOverviewRuler.wordHighlightForeground",
+            "editor.wordHighlightStrongBackground",
+            "editorOverviewRuler.wordHighlightStrongForeground",
+            "editor.symbolHighlightBackground",
+            "editor.selectionHighlightBackground",
+            "editorOverviewRuler.selectionHighlightForeground",
+        ],
+        palette.base(BaseScale::LightBg),
+    );
+
     builder.add_workspace_rule("input.background", palette.base(BaseScale::MiddleBg));
     builder.add_workspace_rule(
         "input.placeholderForeground",
