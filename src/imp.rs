@@ -189,6 +189,34 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::DarkFg),
     );
 
+    builder.add_workspace_rules(
+        &[
+            "errorForeground",
+            "editorError.foreground",
+            "list.errorForeground",
+            "inputValidation.errorForeground",
+            "inputValidation.errorBorder",
+            "minimap.errorHighlight",
+            "editorOverviewRuler.errorForeground",
+        ],
+        palette.red(),
+    );
+    builder.add_workspace_rules(
+        &[
+            "editorWarning.foreground",
+            "list.warningForeground",
+            "inputValidation.warningForeground",
+            "inputValidation.warningBorder",
+            "minimap.warningHighlight",
+            "editorOverviewRuler.warningForeground",
+        ],
+        palette.orange(),
+    );
+    builder.add_workspace_rule(
+        "inputValidation.errorBackground",
+        palette.base(BaseScale::MiddleBg),
+    );
+
     builder.add_workspace_rule("textLink.foreground", palette.blue());
     builder.add_workspace_rule("textLink.activeForeground", palette.blue_2());
 
