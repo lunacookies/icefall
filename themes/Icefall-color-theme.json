@@ -157,6 +157,7 @@
 		"panel.border": "#3F455D",
 		"editorWidget.border": "#3F455D",
 		"editorOverviewRuler.border": "#3F455D",
+		"editorRuler.foreground": "#3F455D",
 		"focusBorder": "#81A1CA"
 	},
 	"semanticHighlighting": true,

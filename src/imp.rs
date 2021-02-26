@@ -354,6 +354,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
             "panel.border",
             "editorWidget.border",
             "editorOverviewRuler.border",
+            "editorRuler.foreground",
         ],
         palette.base(BaseScale::LightBg),
     );
