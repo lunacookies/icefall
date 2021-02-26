@@ -125,8 +125,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::DarkFg),
     );
 
-    builder.add_workspace_rule(
-        "editor.selectionBackground",
+    builder.add_workspace_rules(
+        &["editor.selectionBackground", "minimap.selectionHighlight"],
         palette.base(BaseScale::LightBg),
     );
 
