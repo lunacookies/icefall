@@ -63,6 +63,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
             "editor.findMatchBackground",
             "minimap.findMatchHighlight",
             "editorOverviewRuler.findMatchForeground",
+            "peekViewEditor.matchHighlightBackground",
         ],
         palette.base(BaseScale::LightBg),
     );
@@ -81,7 +82,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_workspace_rules(
-        &["list.focusBackground", "list.activeSelectionBackground"],
+        &[
+            "list.focusBackground",
+            "list.activeSelectionBackground",
+            "peekViewResult.selectionBackground",
+        ],
         palette.base(BaseScale::LightBg),
     );
     builder.add_workspace_rule(
@@ -257,6 +262,27 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         "inputValidation.errorBackground",
         palette.base(BaseScale::MiddleBg),
     );
+
+    builder.add_workspace_rule("peekViewEditor.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule("peekViewResult.background", palette.base(BaseScale::Bg));
+    builder.add_workspace_rule(
+        "peekViewTitle.background",
+        palette.base(BaseScale::MiddleBg),
+    );
+    builder.add_workspace_rule(
+        "peekViewResult.fileForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_workspace_rule("peekViewResult.lineForeground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "peekViewTitleLabel.foreground",
+        palette.base(BaseScale::BrightFg),
+    );
+    builder.add_workspace_rule(
+        "peekViewTitleDescription.foreground",
+        palette.base(BaseScale::DarkFg),
+    );
+    builder.add_workspace_rule("peekView.border", palette.base(BaseScale::BarelyVisibleFg));
 
     builder.add_workspace_rule("textLink.foreground", palette.blue());
     builder.add_workspace_rule("textLink.activeForeground", palette.blue_2());
