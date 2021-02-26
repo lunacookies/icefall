@@ -150,6 +150,45 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("diffEditor.insertedTextBackground", (palette.green(), 0x20));
     builder.add_workspace_rule("diffEditor.removedTextBackground", (palette.red(), 0x20));
 
+    builder.add_workspace_rules(
+        &[
+            "gitDecoration.addedResourceForeground",
+            "gitDecoration.untrackedResourceForeground",
+            "editorGutter.addedBackground",
+            "minimapGutter.addedBackground",
+            "editorOverviewRuler.addedForeground",
+        ],
+        palette.green(),
+    );
+    builder.add_workspace_rules(
+        &[
+            "gitDecoration.deletedResourceForeground",
+            "gitDecoration.stageDeletedResourceForeground",
+            "editorGutter.deletedBackground",
+            "minimapGutter.deletedBackground",
+            "editorOverviewRuler.deletedForeground",
+        ],
+        palette.red(),
+    );
+    builder.add_workspace_rules(
+        &[
+            "gitDecoration.modifiedResourceForeground",
+            "gitDecoration.stageModifiedResourceForeground",
+            "editorGutter.modifiedBackground",
+            "minimapGutter.modifiedBackground",
+            "editorOverviewRuler.modifiedForeground",
+        ],
+        palette.orange(),
+    );
+    builder.add_workspace_rule(
+        "gitDecoration.conflictingResourceForeground",
+        palette.purple(),
+    );
+    builder.add_workspace_rule(
+        "gitDecoration.ignoredResourceForeground",
+        palette.base(BaseScale::DarkFg),
+    );
+
     builder.add_workspace_rule("textLink.foreground", palette.blue());
     builder.add_workspace_rule("textLink.activeForeground", palette.blue_2());
 
