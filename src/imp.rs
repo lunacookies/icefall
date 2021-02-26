@@ -350,6 +350,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
             "input.border",
             "editorGroup.border",
             "sideBar.border",
+            "activityBar.border",
             "panel.border",
             "editorWidget.border",
             "editorOverviewRuler.border",
