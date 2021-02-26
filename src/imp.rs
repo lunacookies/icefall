@@ -10,8 +10,10 @@ pub(crate) fn add_rules(builder: &mut ThemeBuilder, palette: &Palette) {
 
 fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("editor.background", palette.base(BaseScale::Bg));
-    builder.add_workspace_rule("editor.foreground", palette.base(BaseScale::Fg));
-    builder.add_workspace_rule("foreground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rules(
+        &["editor.foreground", "foreground"],
+        palette.base(BaseScale::Fg),
+    );
 
     builder.add_workspace_rule(
         "editorLineNumber.foreground",
@@ -28,43 +30,31 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::MiddleBg),
     );
 
-    builder.add_workspace_rule(
-        "editor.findMatchHighlightBackground",
-        palette.base(BaseScale::LightBg),
-    );
-    builder.add_workspace_rule(
-        "editor.findMatchBackground",
+    builder.add_workspace_rules(
+        &[
+            "editor.findMatchHighlightBackground",
+            "editor.findMatchBackground",
+            "minimap.findMatchHighlight",
+            "editorOverviewRuler.findMatchForeground",
+        ],
         palette.base(BaseScale::LightBg),
     );
     builder.add_workspace_rule("editor.findMatchBorder", palette.base(BaseScale::DarkFg));
-    builder.add_workspace_rule(
-        "minimap.findMatchHighlight",
-        palette.base(BaseScale::LightBg),
-    );
-    builder.add_workspace_rule(
-        "editorOverviewRuler.findMatchForeground",
-        palette.base(BaseScale::LightBg),
-    );
 
     builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::MiddleBg));
 
     builder.add_workspace_rule("list.focusForeground", palette.base(BaseScale::Fg));
-    builder.add_workspace_rule(
-        "list.activeSelectionForeground",
-        palette.base(BaseScale::BrightFg),
-    );
-    builder.add_workspace_rule(
-        "list.inactiveSelectionForeground",
-        palette.base(BaseScale::BrightFg),
-    );
-    builder.add_workspace_rule(
-        "list.highlightForeground",
+    builder.add_workspace_rules(
+        &[
+            "list.activeSelectionForeground",
+            "list.inactiveSelectionForeground",
+            "list.highlightForeground",
+        ],
         palette.base(BaseScale::BrightFg),
     );
 
-    builder.add_workspace_rule("list.focusBackground", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule(
-        "list.activeSelectionBackground",
+    builder.add_workspace_rules(
+        &["list.focusBackground", "list.activeSelectionBackground"],
         palette.base(BaseScale::LightBg),
     );
     builder.add_workspace_rule(
@@ -73,9 +63,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_workspace_rule("list.hoverBackground", palette.base(BaseScale::Bg));
 
-    builder.add_workspace_rule("sideBar.background", palette.base(BaseScale::Bg));
-    builder.add_workspace_rule(
-        "sideBarSectionHeader.background",
+    builder.add_workspace_rules(
+        &["sideBar.background", "sideBarSectionHeader.background"],
         palette.base(BaseScale::Bg),
     );
     builder.add_workspace_rule(
@@ -90,12 +79,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BarelyVisibleFg),
     );
 
-    builder.add_workspace_rule(
-        "editorGroupHeader.tabsBackground",
-        palette.base(BaseScale::DarkBg),
-    );
-    builder.add_workspace_rule(
-        "editorGroupHeader.noTabsBackground",
+    builder.add_workspace_rules(
+        &[
+            "editorGroupHeader.tabsBackground",
+            "editorGroupHeader.noTabsBackground",
+        ],
         palette.base(BaseScale::DarkBg),
     );
     builder.add_workspace_rule("tab.inactiveBackground", palette.base(BaseScale::Bg));
@@ -116,21 +104,19 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::DarkFg),
     );
 
-    builder.add_workspace_rule("statusBar.background", palette.base(BaseScale::DarkBg));
-    builder.add_workspace_rule(
-        "statusBar.debuggingBackground",
-        palette.base(BaseScale::DarkBg),
-    );
-    builder.add_workspace_rule(
-        "statusBar.noFolderBackground",
+    builder.add_workspace_rules(
+        &[
+            "statusBar.background",
+            "statusBar.debuggingBackground",
+            "statusBar.noFolderBackground",
+        ],
         palette.base(BaseScale::DarkBg),
     );
     builder.add_workspace_rule("statusBar.foreground", palette.base(BaseScale::DarkFg));
     builder.add_workspace_rule("statusBar.debuggingForeground", palette.orange());
 
-    builder.add_workspace_rule("titleBar.activeBackground", palette.base(BaseScale::DarkBg));
-    builder.add_workspace_rule(
-        "titleBar.inactiveBackground",
+    builder.add_workspace_rules(
+        &["titleBar.activeBackground", "titleBar.inactiveBackground"],
         palette.base(BaseScale::DarkBg),
     );
     builder.add_workspace_rule("titleBar.activeForeground", palette.base(BaseScale::Fg));
@@ -188,17 +174,17 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BrightFg),
     );
 
-    builder.add_workspace_rule("editorCursor.foreground", palette.base(BaseScale::BrightFg));
-    builder.add_workspace_rule("editorCursor.background", palette.base(BaseScale::DarkBg));
-    builder.add_workspace_rule(
-        "terminalCursor.foreground",
+    builder.add_workspace_rules(
+        &["editorCursor.foreground", "terminalCursor.foreground"],
         palette.base(BaseScale::BrightFg),
     );
-    builder.add_workspace_rule("terminalCursor.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rules(
+        &["editorCursor.background", "terminalCursor.background"],
+        palette.base(BaseScale::DarkBg),
+    );
 
-    builder.add_workspace_rule("tree.indentGuidesStroke", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule(
-        "editorIndentGuide.background",
+    builder.add_workspace_rules(
+        &["editorIndentGuide.background", "tree.indentGuidesStroke"],
         palette.base(BaseScale::LightBg),
     );
     builder.add_workspace_rule(
@@ -206,22 +192,26 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::BarelyVisibleFg),
     );
 
-    builder.add_workspace_rule("tab.border", palette.base(BaseScale::MiddleBg));
-    builder.add_workspace_rule(
-        "editorGroupHeader.border",
+    builder.add_workspace_rules(
+        &[
+            "tab.border",
+            "editorGroupHeader.border",
+            "editorGroupHeader.tabsBorder",
+            "statusBar.border",
+        ],
         palette.base(BaseScale::MiddleBg),
     );
-    builder.add_workspace_rule(
-        "editorGroupHeader.tabsBorder",
-        palette.base(BaseScale::MiddleBg),
-    );
-    builder.add_workspace_rule("statusBar.border", palette.base(BaseScale::MiddleBg));
 
-    builder.add_workspace_rule("input.border", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule("editorGroup.border", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule("sideBar.border", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule("panel.border", palette.base(BaseScale::LightBg));
-    builder.add_workspace_rule("editorWidget.border", palette.base(BaseScale::LightBg));
+    builder.add_workspace_rules(
+        &[
+            "input.border",
+            "editorGroup.border",
+            "sideBar.border",
+            "panel.border",
+            "editorWidget.border",
+        ],
+        palette.base(BaseScale::LightBg),
+    );
 
     builder.add_workspace_rule("focusBorder", palette.blue());
 }
